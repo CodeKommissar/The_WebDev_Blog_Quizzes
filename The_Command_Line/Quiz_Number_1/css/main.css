@@ -1,9 +1,15 @@
-/* body {
-  font-family: 'Roboto', sans-serif;
-} */
+body {
+  font-family: 'Work Sans', sans-serif;
+  font-size: 1.2em;
+}
 
 * {
   box-sizing: border-box;
+}
+
+h1 {
+  font-family: 'Permanent Marker', cursive;
+  color: #172934;
 }
 
 h1, h2 {

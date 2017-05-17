@@ -3,7 +3,7 @@
 <head>
 	<meta charset="utf-8">
 	<title>The WebDev Blog - The Command Line Quiz 1</title>
- 	<!-- <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto"> -->
+ 	<link href="https://fonts.googleapis.com/css?family=Permanent+Marker|Work+Sans" rel="stylesheet">
 	<link rel="stylesheet" href="css/normalize.min.css">
  	<link rel="stylesheet" href="css/main.css">
  	<link rel="stylesheet" href="css/font-awesome.min.css">
@@ -17,8 +17,6 @@
 	</header>
 
 	<button class="start-quiz">Start the Quiz!</button>
-
-	<br>
 
 	<section class="quiz">
 		<div class="question-number-1 hidden">
@@ -257,6 +255,15 @@
 	<div class="results-box hidden">
       <p>Current Score: <span class="correct-answers-num"></span> correct, <span class="wrong-answers-num"></span> incorrect</p>
     </div>
+
+	<div class="final-results hidden">
+		<p>You got <span class="final-correct-answers"></span> correct answers out of 7 questions</p>
+		<p class="seven-out-of-seven">You did great! It seems that I'm a great teacher</p>
+		<p class="five-out-of-seven">You did pretty good!</p>
+		<p class="three-out-of-seven">You could have done better!</p>
+		<p class="zero-out-of-seven">It seems that I'm a bad teacher...</p>
+		<p>To return to the blog and do the exercises click <a href="#">here</a></p>
+	</div>
 
 	<script type="text/javascript" src="js/jquery-3.2.1.min.js"></script>
 	<script type="text/javascript" src="js/code.js"></script>

@@ -10,6 +10,7 @@ $("button.start-quiz").on("click", function(){
   $(".submit-answer").hide();
   $(".answer-paragraph").hide();
   $(".next-question").hide();
+  $(".final-results").hide();
   // 3)Displays the first question
   $(".question-number-1").fadeIn();
   $(".question-number-1").removeClass("hidden");
@@ -581,8 +582,24 @@ $(".question-number-7" + ' li').on("click", function(e){
 
     $(".question-number-7").slideUp();
 
+    $(".final-results").show();
+    $(".results-box").hide();
+    $(".final-results .seven-out-of-seven").hide();
+    $(".final-results .five-out-of-seven").hide();
+    $(".final-results .three-out-of-seven").hide();
+    $(".final-results .zero-out-of-seven").hide();
 
-    alert("correct answers: " + correct_answers);
-    alert("incorrect answers: " + incorrect_answers);
+    $(".final-results .final-correct-answers").text(correct_answers);
+
+    if(correct_answers == 7) {
+      $(".final-results .seven-out-of-seven").show();
+    } else if(correct_answers == 6 || correct_answers == 5) {
+      $(".final-results .five-out-of-seven").show();
+    } else if(correct_answers == 4 || correct_answers == 3) {
+      $(".final-results .three-out-of-seven").show();
+    } else if(correct_answers == 2 || correct_answers == 1 || correct_answers == 0) {
+      $(".final-results .zero-out-of-seven").show();
+    }
+
   });
 

@@ -1,0 +1,106 @@
+/* body {
+  font-family: 'Roboto', sans-serif;
+} */
+
+* {
+  box-sizing: border-box;
+}
+
+h1, h2 {
+  text-align: center;
+}
+
+button, input[type="text"] {
+  padding: 5px;
+}
+
+button:hover {
+  cursor: pointer;
+}
+
+.container {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.hidden {
+  display: none;
+}
+
+.answers li {
+  color: #333;
+  list-style: none;
+  border: 1px solid grey;
+  margin-bottom: 8px;
+  padding: 8px;
+  font-weight: normal;
+}
+
+.answers li:hover {
+  border: 2px solid black;
+  color: #222;
+}
+
+li.clicked-answer {
+  border: 3px solid gray;
+  color: black;
+  font-weight: bold;
+}
+
+li.css-correct-answer {
+  border: 3px solid green;
+  color: green;
+  font-weight: bold;
+}
+
+li.css-wrong-answer {
+  border: 3px solid red;
+  color: red;
+  font-weight: bold;
+}
+
+.answers li.css-correct-answer:hover {
+  border: 3px solid green;
+  color: green;
+  font-weight: bold;
+}
+
+.answers li.css-wrong-answer:hover {
+  border: 3px solid red;
+  color: red;
+  font-weight: bold;
+}
+
+.correct-span {
+  color: green;
+  font-family: bold;
+  text-decoration: underline;
+}
+
+.wrong-span {
+  color: red;
+  font-family: bold;
+  text-decoration: underline;
+}
+
+/*
+
+.answers li.clicked-answer {
+  border: 3px solid gray;
+  color: black;
+  font-weight: bold;
+}
+
+.answers li.correct-answer {
+  border: 3px solid green;
+  color: green;
+  font-weight: bold;
+}
+
+.answers li.wrong-answer {
+  border: 3px solid red;
+  color: red;
+  font-weight: bold;
+}
+
+*/

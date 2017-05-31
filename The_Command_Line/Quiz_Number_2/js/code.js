@@ -583,7 +583,6 @@ $(".question-number-7" + ' li').on("click", function(e){
     $(".question-number-7").slideUp();
 
     $(".final-results").show();
-    $(".hr").show();  
     $(".results-box").hide();
     $(".final-results .seven-out-of-seven").hide();
     $(".final-results .five-out-of-seven").hide();
